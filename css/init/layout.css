@@ -1,4 +1,42 @@
 .container {
     display: inline-block;
     width: 100%;
+    padding: 20px;
 }
+
+.container>.row {
+    display: inline-block;
+    width: 100%;
+    background-color: pink;
+}
+
+.container>.row>.col-6 {
+    float: left;
+    width: 50%;
+}
+
+.container>.row>.col-12 {
+    float: left;
+    width: 100%;
+    padding: 20px;
+}
+
+@media (min-width: 575px) {}
+
+@media (min-width: 767px) {
+    .container>.row>.col-md-6 {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media (min-width: 991px) {
+    .container>.row>.col-lg-4 {
+        float: left;
+        width: 33%;
+    }
+}
+
+@media (min-width: 1199px) {}
+
+@media (min-width: 1399px) {}
