@@ -46,3 +46,17 @@
 .subtitle>.selected {
     color: var(--color-blue);
 }
+
+.bottom-text-link {
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    color: #444;
+    font-weight: bold;
+}
+
+.bottom-text-link>a {
+    color: var(--color-blue);
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-grey-dark);
+}
