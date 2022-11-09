@@ -7,6 +7,9 @@ import { services } from './components/services/services.js';
 /* services */
 /* about me */
 /* achievements */
+import { Achievements } from './components/achievements/Achievements.js';
+import { achievementsData } from './data/achievementsData.js'
+
 /* promo video */
 /* case studies */
 /* testimonials */
@@ -20,8 +23,11 @@ import { services } from './components/services/services.js';
 /* clients */
 /* services */
 services('#services_block', servicesData);
+
 /* about me */
 /* achievements */
+const achievement = new Achievements('#achievements_block', achievementsData);
+
 /* promo video */
 /* case studies */
 /* testimonials */
