@@ -1,22 +1,37 @@
+import { isValidServices } from './isValidServices.js';
+import { isValidServiceItem } from './isValidServiceItem.js';
+
 function services(selector, data) {
     // input validation
+    if (!isValidServices) {
+        return false;
+    }
 
     // logic
     const DOM = document.querySelector(selector);
-    const servicesArray = data.list;
-    const imgPath = data.imgPath;
+    if (!DOM) {
+        console.error('Pagal pateikta selektoriu nerastas norimas elementas.');
+        return false;
+    }
+
+    const { list, imgPath, maxCount } = data;
 
     let HTML = '';
+    let generatedServicesCount = 0;
 
-    for (let i = 0; i < servicesArray.length; i++) {
-        const service = servicesArray[i];
-        console.log(service);
+    for (let i = 0; i < list.length; i++) {
+        const service = list[i];
 
-        if (!service.active) {
+        if (!isValidServiceItem(service) ||
+            !service.active) {
             continue;
         }
+        if (generatedServicesCount === maxCount) {
+            break;
+        }
 
-        HTML += `<div class="col-12 col-md-6 col-lg-4 service-item">
+        generatedServicesCount++;
+        HTML += `<div class="service-item">
                     <img src="${imgPath + service.img}" alt="">
                     <h4>${service.title}</h4>
                     <p>${service.description}</p>

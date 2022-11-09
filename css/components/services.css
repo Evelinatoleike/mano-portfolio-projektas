@@ -1,23 +1,29 @@
-.service-item {
-    padding: 60px 50px;
-    margin-bottom: 50px;
+.services-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px 30px;
+    align-items: start;
+}
+
+.services-list>.service-item {
+    padding: 60px;
     text-align: center;
     background-color: white;
     border-radius: 6px;
     box-shadow: 0 12px 30px #0001;
     position: relative;
-    transition: all 2s;
+    transition: all 1Ss;
 }
 
-.service-item:hover {
+.services-list>.service-item:hover {
     border-radius: 20px;
 }
 
-.service-item>img {
+.services-list>.service-item>img {
     margin-bottom: 30px;
 }
 
-.service-item>h4 {
+.services-list>.service-item>h4 {
     margin-bottom: 20px;
     font-size: 24px;
     line-height: 30px;
@@ -25,13 +31,13 @@
     color: black;
 }
 
-.service-item>p {
+.services-list>.service-item>p {
     color: #777;
     font-size: 14px;
     line-height: 26px;
 }
 
-.service-item>a {
+.services-list>.service-item>a {
     width: 60px;
     height: 60px;
     font-size: 24px;
@@ -47,6 +53,18 @@
     transition: all 1s;
 }
 
-.service-item:hover>a {
+.services-list>.service-item:hover>a {
     background-color: var(--color-blue);
+}
+
+@media (min-width: 767px) {
+    .services-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1199px) {
+    .services-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
