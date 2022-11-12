@@ -16,7 +16,8 @@ const headerData = {
     logo: {
         imgPath: './img/',
         mobile: 'logo-mobile.png',
-        default: 'logo-png',
+        defaultLogo: 'logo.png',
+        alt: 'Logo',
     },
     nav: [
         {

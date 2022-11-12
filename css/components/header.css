@@ -1,5 +1,6 @@
 .container.header {
     padding: 0;
+    position: relative;
 }
 
 .header>.row {
@@ -9,7 +10,22 @@
 
 .header .top-text {
     display: flex;
+    margin: 0;
+    width: 100%;
     gap: 5px;
     justify-content: center;
     line-height: 40px;
+    border-bottom: 1px solid #ccc;
+    background-color: var(--color-creame);
+}
+
+.header .bottom-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    height: 30px;
 }
