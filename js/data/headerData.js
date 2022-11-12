@@ -22,26 +22,32 @@ const headerData = {
     nav: [
         {
             type: 'link',
+            href: '#',
             text: 'Home',
         },
         {
             type: 'link',
+            href: '#',
             text: 'Company',
         },
         {
             type: 'link',
+            href: '#',
             text: 'IT Solutions',
         },
         {
             type: 'link',
+            href: '#',
             text: 'Elements',
         },
         {
             type: 'link',
+            href: '#',
             text: 'Case Studies',
         },
         {
             type: 'link',
+            href: '#',
             text: 'Blog',
         },
     ],
