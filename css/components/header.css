@@ -1,0 +1,15 @@
+.container.header {
+    padding: 0;
+}
+
+.header>.row {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header .top-text {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    line-height: 40px;
+}
