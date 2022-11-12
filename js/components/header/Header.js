@@ -11,6 +11,7 @@
 
 import { TopText } from './TopText.js';
 import { Logo } from './Logo.js';
+import { Nav } from './Nav.js';
 
 class Header {
     constructor(selector, data) {
