@@ -10,6 +10,7 @@
 // uzregistruoti event - scroll - position: static/fixed
 
 import { TopText } from './TopText.js';
+import { Logo } from './Logo.js';
 
 class Header {
     constructor(selector, data) {
@@ -52,7 +53,7 @@ class Header {
     }
 
     render() {
-        const HTML = `<div class="row top-text col-12"></div>
+        const HTML = `<div class="row top-text"></div>
                     <div class="row"><div class="col-12 bottom-content"></div></div>`;
         this.DOM.innerHTML = HTML;
 
