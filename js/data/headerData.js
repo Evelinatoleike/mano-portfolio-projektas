@@ -21,14 +21,38 @@ const headerData = {
     },
     nav: [
         {
-            type: 'link',
+            type: 'text',
             href: '#',
             text: 'Home',
+            submenu: [
+                { type: 'link', href: '#', text: 'Pavadinimas 1' },
+                { type: 'link', href: '#', text: 'Pavadinimas 2' },
+                { type: 'link', href: '#', text: 'Pavadinimas 3' },
+                {
+                    type: 'link', href: '#', text: 'Pavadinimas 4',
+                    submenu: [
+                        { type: 'link', href: '#', text: 'Pavadinimo pavadinimas 1' },
+                        { type: 'link', href: '#', text: 'Pavadinimo pavadinimas 2' },
+                        { type: 'link', href: '#', text: 'Pavadinimo pavadinimas 3' },
+                    ],
+                    submenuDirection: 'right',
+                },
+                { type: 'link', href: '#', text: 'Pavadinimas 5' },
+                { type: 'link', href: '#', text: 'Pavadinimas 6' },
+            ],
+            submenuDirection: 'bottom',
         },
         {
             type: 'link',
             href: '#',
             text: 'Company',
+            submenu: [
+                { type: 'link', href: '#', text: 'Kitas pavadinimas 1' },
+                { type: 'link', href: '#', text: 'Kitas pavadinimas 2' },
+                { type: 'link', href: '#', text: 'Kitas pavadinimas 3' },
+                { type: 'link', href: '#', text: 'Kitas pavadinimas 4' },
+            ],
+            submenuDirection: 'bottom',
         },
         {
             type: 'link',

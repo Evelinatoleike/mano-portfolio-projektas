@@ -1,4 +1,3 @@
-// 
 // validuoti selector
 // valid data
 // susirasti DOM vieta, kur generuosime header (pagal selector)
@@ -42,7 +41,6 @@ class Header {
         this.DOM.classList.add('header');
 
         this.render();
-        this.addEvents();
     }
 
     isValidSelector() {
