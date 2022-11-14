@@ -76,25 +76,22 @@ const headerData = {
         },
     ],
     languages: {
-        imgPath: './img/languages',
-        defaut: 'en',
-        list: [
-            {
-                short: 'en',
+        imgPath: './img/languages/',
+        defaultLang: 'en',
+        list: {
+            en: {
                 full: 'English',
-                img: 'en.jpg'
+                img: 'en.png',
             },
-            {
-                short: 'fr',
+            fr: {
                 full: 'Français',
-                img: 'fr.jpg'
+                img: 'fr.png',
             },
-            {
-                short: 'de',
+            de: {
                 full: 'Deutsch',
-                img: 'de.jpg'
+                img: 'de.png',
             },
-        ]
+        }
     }
 }
 

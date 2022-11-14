@@ -158,3 +158,51 @@
 .header .search>.fa:hover {
     font-size: 20px;
 }
+
+.header .languages {
+    position: relative;
+    user-select: none;
+}
+
+.header .languages>.selected {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.header .languages img {
+    height: 23px;
+    width: 35px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.header .languages>.list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0 2px 8px #0001;
+}
+
+.header .languages:hover>.list {
+    display: block;
+}
+
+.header .languages>.list>.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header .languages>.list>.item:hover {
+    background-color: var(--color-creame);
+}
