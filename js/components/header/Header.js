@@ -11,6 +11,9 @@
 import { TopText } from './TopText.js';
 import { Logo } from './Logo.js';
 import { Nav } from './Nav.js';
+import { Languages } from './Languages.js';
+import { Search } from './Search.js';
+
 
 class Header {
     constructor(selector, data) {
@@ -41,6 +44,7 @@ class Header {
         this.DOM.classList.add('header');
 
         this.render();
+        this.addEvents();
     }
 
     isValidSelector() {
@@ -63,6 +67,20 @@ class Header {
         new Nav(allRowsDOM[1], this.data.nav);
         new Languages(allRowsDOM[1], this.data.languages);
         new Search(allRowsDOM[1]);
+
+    }
+
+    addEvents() {
+        const fixHeaderPositionAtHeight = 200;
+        const staticHeaderPositionAtHeight = 40;
+        addEventListener('scroll', () => {
+            if (scrollY >= fixHeaderPositionAtHeight) {
+                this.DOM.classList.add('fixed');
+            }
+            if (scrollY < staticHeaderPositionAtHeight) {
+                this.DOM.classList.remove('fixed');
+            }
+        })
     }
 }
 
